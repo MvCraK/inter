@@ -2,9 +2,8 @@
 # 这是一个快速抓包的脚本
 # 你可以直接修改脚本或优化某个工具包模块
 # 因分享而进步 
-# 作者: iospwn
-# qq群：458658117
-# 中文源：http://Crak.cn/repo/
+# 作者: CraK
+# 中文源：http://crak.cn/repo/
 
 if [ "$UID" != 0 ];then echo "以root用户运行!";exit 0;fi
 
@@ -61,8 +60,8 @@ echo -e "${b1}   #               #	 ${b2}"
 echo -e "${b1}    ###############    ${b2}"
 echo -e "${b1}      ##       ##         ${b2}"
 echo -e "${b1}       #       #   inter-v1.4-5  ${b2}"
-echo -e "${b1}                  py:iospwn${b2}"
-echo "          中文源:Crak.cn/repo/   "
+echo -e "${b1}                  py:CraK${b2}"
+echo "          中文源:crak.cn/repo/   "
 echo -e "${c1} +++加载中.....${c2}"
 
 repair_ldid() { echo "修复工具" $ok;echo "运行工具包出现的killed:9 ";echo "& illegal instruction 4问题";echo "输入存在以上问题工具包名称后回车";read -p ":" update_repair;if [ -z "$update_repair" ];then
